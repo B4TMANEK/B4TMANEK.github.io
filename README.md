@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Pierwsza Strona</title>
+    <title>Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,13 +13,13 @@
             padding: 0;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
             padding: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
+            background-color: transparent; /* brak tła */
+            color: black; /* czarny tekst */
         }
         header img {
             width: 40px;
@@ -36,7 +36,7 @@
         }
         a {
             text-decoration: none;
-            color: white;
+            color: black;
         }
     </style>
 </head>
@@ -44,18 +44,18 @@
 
     <header>
         <a href="/">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Logo domku">
+            <img src="https://cdn-icons-png.flaticon.com/512/74/74807.png" alt="Logo domku bez tła">
         </a>
-        <h1>Witaj na mojej stronie!</h1>
+        <h1>Tomasz Bachmann - Portfolio</h1>
     </header>
 
     <main>
-        <p>To jest moja pierwsza prosta strona hostowana na GitHub Pages.</p>
+        <p>Oto moje portfolio prac graficznych</p>
         <p>Miłego dnia!</p>
     </main>
 
     <footer>
-        &copy; 2025 Moje Imię
+        &copy; 2025 Tomasz Bachmann
     </footer>
 
 </body>
