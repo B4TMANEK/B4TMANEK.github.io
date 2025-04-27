@@ -90,6 +90,21 @@
             cursor: pointer;
             z-index: 1100;
         }
+        /* Button to go back to the main page */
+        #home-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            text-align: center;
+        }
+        #home-btn:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -105,6 +120,11 @@
             <img src="images/JK.png">
             <img src="images/RP.png">
         </div>
+
+        <!-- Button to go back to the main page -->
+        <a href="index.html">
+            <button id="home-btn">Strona Główna</button>
+        </a>
     </main>
 
     <div id="lightbox" class="hidden">
