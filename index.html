@@ -73,12 +73,22 @@
         }
         #lightbox img {
             max-width: 90%;
-            max-height: 90%;
+            max-height: 80%;
             border-radius: 10px;
         }
         #lightbox.show {
             opacity: 1;
             pointer-events: auto;
+        }
+        #close-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1100;
         }
     </style>
 </head>
@@ -109,6 +119,7 @@
     </main>
 
     <div id="lightbox" class="hidden">
+        <div id="close-btn">&times;</div>
         <img id="lightbox-img" src="" alt="Powiększone zdjęcie">
     </div>
 
@@ -119,6 +130,7 @@
     <script>
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.getElementById('close-btn');
         const images = document.querySelectorAll('.gallery img');
 
         images.forEach(img => {
@@ -129,9 +141,13 @@
         });
 
         lightbox.addEventListener('click', (e) => {
-            if (e.target !== lightboxImg) {
+            if (e.target !== lightboxImg && e.target !== closeBtn) {
                 lightbox.classList.remove('show');
             }
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('show');
         });
     </script>
 
