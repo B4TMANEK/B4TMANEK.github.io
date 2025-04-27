@@ -37,7 +37,7 @@
             margin-top: 60px;
             font-size: 1.8em;
         }
-        .gallery {
+        .gallery, .link-gallery {
             display: flex;
             justify-content: center;
             gap: 30px;
@@ -45,7 +45,7 @@
             padding: 10px;
             flex-wrap: wrap;
         }
-        .gallery img {
+        .gallery img, .link-gallery img {
             width: 250px;
             height: 160px;
             object-fit: cover;
@@ -53,8 +53,16 @@
             cursor: pointer;
             transition: transform 0.3s;
         }
-        .gallery img:hover {
+        .gallery img:hover, .link-gallery img:hover {
             transform: scale(1.05);
+        }
+        .link-item {
+            text-align: center;
+        }
+        .link-item a {
+            display: block;
+            margin-top: 8px;
+            font-weight: bold;
         }
         /* Lightbox */
         #lightbox {
@@ -108,6 +116,28 @@
             <img src="images/SK.png">
             <img src="images/ER.png">
         </div>
+
+        <div class="link-gallery">
+            <div class="link-item">
+                <a href="P1.html">
+                    <img src="images/link1.png" alt="Link 1">
+                    <span>Placeholder 1</span>
+                </a>
+            </div>
+            <div class="link-item">
+                <a href="podstrona2.html">
+                    <img src="images/link2.png" alt="Link 2">
+                    <span>Placeholder 2</span>
+                </a>
+            </div>
+            <div class="link-item">
+                <a href="podstrona3.html">
+                    <img src="images/link3.png" alt="Link 3">
+                    <span>Placeholder 3</span>
+                </a>
+            </div>
+        </div>
+
     </main>
 
     <div id="lightbox" class="hidden">
