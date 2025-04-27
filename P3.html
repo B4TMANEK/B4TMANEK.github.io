@@ -2,11 +2,111 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Podstrona 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekty malowań samochodów</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background-color: transparent;
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            font-size: 0.8em;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h2 {
+            margin-top: 60px;
+            font-size: 2.5em;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 250px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Button to go back to the main page */
+        #home-btn, #portfolio-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            text-align: center;
+        }
+        #home-btn:hover, #portfolio-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Witaj na Podstronie 1!</h1>
-    <p>Tu będą Twoje treści dla tej konkretnej podstrony.</p>
-    <a href="index.html">Wróć do strony głównej</a>
+
+    <header>
+        <h1>Projekty malowań samochodów - Tomasz Bachmann</h1>
+    </header>
+
+    <main>
+        <h2>Projekty malowań samochodów</h2>
+        
+        <div class="gallery">
+            <a href="podstrona1.html">
+                <img src="images/T.jpg">
+            </a>
+            <a href="podstrona2.html">
+                <img src="images/N.jpg">
+            </a>
+            <a href="podstrona3.html">
+                <img src="images/S.jpg">
+            </a>
+            <a href="podstrona4.html">
+                <img src="images/L.jpg">
+            </a>
+        </div>
+
+        <!-- Button to go back to the main page -->
+        <a href="index.html">
+            <button id="home-btn">Strona Główna</button>
+        </a>
+        
+        </a>
+    </main>
+
+    <footer>
+        &copy; 2025 Tomasz Bachmann
+    </footer>
+
 </body>
 </html>
